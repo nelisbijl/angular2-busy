@@ -14,3 +14,6 @@ build/busy.js
 
 #Webstorm IDE settings
 /.idea
+
+#ngc intermediate files
+/build/src/compiled

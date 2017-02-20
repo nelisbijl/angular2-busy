@@ -30,7 +30,7 @@
     "build:demo": "cross-env NODE_ENV=demo webpack --progress",
     "watch:demo": "cross-env NODE_ENV=demo webpack-dev-server --inline --progress --profile --colors --watch --display-error-details --display-cached --content-base demo/asset",
     "test": "cross-env NODE_ENV=test webpack --inline --progress --colors --watch --content-base test",
-    "tsc": "node_modules/.bin/tsc",
+    "tsc": "node_modules/.bin/ngc",
     "pretsc.src": "node_modules/.bin/rimraf build/src/**/*.d.ts",
     "tsc.src": "npm run tsc -- -p src/",
     "tsc.demo": "npm run tsc -- -p demo/"
@@ -42,11 +42,13 @@
   "devDependencies": {
     "@angular/common": "~2.4.0",
     "@angular/compiler": "~2.4.0",
+    "@angular/compiler-cli": "^2.4.8",
     "@angular/core": "~2.4.0",
     "@angular/forms": "~2.4.0",
     "@angular/http": "~2.4.0",
     "@angular/platform-browser": "~2.4.0",
     "@angular/platform-browser-dynamic": "~2.4.0",
+    "@angular/platform-server": "^2.4.8",
     "@angular/router": "~3.4.0",
     "@types/core-js": "^0.9.35",
     "@types/node": "^7.0.5",
